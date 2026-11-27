@@ -108,6 +108,10 @@ Agent: opencode/webkubor
 
 完整规范见 [references/commit-convention.md](./references/commit-convention.md)，含「接手别人分支前先查改动是否已在 main」等分支纪律。
 
+## 个人 Git 兜底规则（公司规则缺位时生效）
+
+没有公司/项目专属 Git 规则时，分支、提交、身份、合并、清理一律按 [references/git-personal-rules.md](./references/git-personal-rules.md) 执行——这是 webkubor 的个人默认口径，覆盖：分支命名与合法基底、Conventional Commits 中文 subject、author/Agent 署名红线（禁 `-c`/`--author` 临时改身份）、多腿分支不删源、不可逆动作先确认、上线腿收完才清理。**有公司规则的仓（如 ModelGo）以公司规则优先，本兜底不覆盖它们。**
+
 ## 快速开始
 
 ```bash

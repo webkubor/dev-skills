@@ -97,6 +97,10 @@ python3 "$SKILL_DIR/scripts/delivery.py" receipt --repo "$REPO" --remote origin 
    不是「我路过看到代码可以更优雅」。
 2. **最小且可验证**（§4）：只改必须改的，跑项目自己的检查，附上维护者能复现的验证步骤。
 
+## Git 个人兜底规则
+
+公司/项目仓有自己的分支与提交规则时**以那边优先**；没有时按 webkubor 的个人默认口径执行：[gitflow 的 git-personal-rules](../gitflow/references/git-personal-rules.md)——分支命名与合法基底（禁从集成分支切开发分支）、Conventional Commits 中文 subject、author 永远是本人（禁 `-c`/`--author` 临时覆盖）、多腿分支不删源、不可逆动作先确认、PR 描述固定「结论/改动面/验证/风险与回滚/Refs」骨架。
+
 ## 触发条件
 
 - 用户说「给 X 仓库提个 PR」「给这个项目提 PR」「贡献一下上游」「fork 一下开个 PR」

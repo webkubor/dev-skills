@@ -1,6 +1,8 @@
 # dev-skills
 
-webkubor 的「交付 → 发版」链路 Agent skills 集合仓。一个仓库，两个独立 skill：各自有 `SKILL.md`、版本、触发词和 CI，互不耦合。
+webkubor 的「交付 → 发版」链路 Agent skills 集合仓。一个仓库，三个独立 skill：各自有 `SKILL.md`、版本、触发词和 CI，互不耦合。
+
+> **Git 个人兜底规则真源**：[skills/gitflow/references/git-personal-rules.md](./skills/gitflow/references/git-personal-rules.md)——分支、提交、署名、合并、清理的个人默认口径。公司/项目仓有自己的 Git 规则时以那边优先；没有时走这份兜底，gitflow 与 pr-contributor 执行时都会加载。
 
 | Skill | 解决什么 | 目录 |
 |---|---|---|
