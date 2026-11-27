@@ -62,7 +62,7 @@ metadata:
 | 「冲突了」「别人也改了」 | 列出冲突文件，问你保留谁的，然后解决 | `gitflow conflict [--resolve mine\|theirs]` |
 | 「用我的」「用对方的」 | 按你选的解决冲突并暂存 | `gitflow conflict --resolve mine\|theirs` |
 | 「做完了」「提交代码」 | 提交 + 推送，然后告诉你下一步提 PR | `gitflow finish` |
-| 「提个 PR」 | 调用 pr-contributor 把改动写成团队能审的合并请求 | 见 pr-contributor |
+| 「提个 PR」 | 调用 pr-contributor 把改动写成团队能审的合并请求；描述骨架读 `ticket-copy`（结论/改动面/验证/风险/Refs） | 见 pr-contributor |
 | 「发版 1.2.0」「上线」 | 从 develop 开 release 分支，准备检查 | `gitflow release 1.2.0` |
 | 「发版确认」 | 合回 main 和 develop、打 tag（先跟你确认） | `gitflow publish --yes` |
 | 「线上出问题了 支付按钮点不动」 | 从 main 开 hotfix 分支 | `gitflow hotfix "<问题>"` |

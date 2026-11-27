@@ -54,6 +54,16 @@ pr-contributor-vX.Y.Z    → 校验 skills/pr-contributor/SKILL.md 的 version
 release-sync-vX.Y.Z      → 校验 skills/release-sync/SKILL.md 的 version
 ```
 
+## 文字规范：和 writing-standard-skills 打通
+
+gitflow 产出的 commit 信息、PR 描述和给小白的反馈，都是「写给别人看的文字」，所以不另造一套写法，复用本机另一组写作 skill：
+
+- [`how-to-write`](../writing-standard-skills/skills/how-to-write/SKILL.md) → subject 结论先行、说人话、主动语态、沿用用户原话；反馈自包含，不靠「上文」
+- [`ticket-copy`](../writing-standard-skills/skills/ticket-copy/SKILL.md) → PR 描述固定「结论 / 改动面 / 验证 / 风险与回滚 / Refs」骨架，验收写成可执行判据
+- [`task-reporting`](../writing-standard-skills/skills/task-reporting/SKILL.md) → 提交、合并、部署、业务验收分开陈述
+
+完整落点在 [`skills/gitflow/references/commit-convention.md`](./skills/gitflow/references/commit-convention.md)。`writing-standard-skills` 是独立仓，这里只引用规范、不复制源码。
+
 ## 来源
 
 由 `webkubor/pr-contributor-skill` 与 `webkubor/release-sync-skill` 合并而来（2026-11-27），旧仓已删除。CHANGELOG 与版本历史保留在各 skill 目录内：
