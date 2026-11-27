@@ -1,6 +1,6 @@
 ---
 name: release-sync
-description: "Vite/Node 包发版时的『版本号 → 文档』自动同步。发新版时把 package.json 的 version 自动写进分类台账（如 vite-plugins/README.md 版本列）和包内 SKILL.md 的 frontmatter version，并校验一致性，从根上消除『代码迭代了、文档/台账/SKILL 版本还停在旧版』的老化。触发条件: 准备 npm publish 发新版、打 v* tag、发版后发现台账或 SKILL 版本滞后、要审计哪些文档版本号落后时触发。触发词: 发版、发布、publish、版本同步、版本号同步、台账同步、SKILL version 同步、release-sync、version-sync。"
+description: "发版后 README、分类台账和 SKILL.md 里的版本号总是忘了改？把『版本号 → 文档』自动同步做成发版门禁：npm publish 时把 package.json 的 version 写进台账版本列和 SKILL frontmatter，不一致就拦下发布；文档里『功能引入版本』这类历史标记不碰。触发条件：准备发新版、打 v* tag、发现版本号滞后、要审计哪些文档版本落后。触发词：发版、发布、publish、版本同步、版本号同步、台账同步、SKILL version 同步、release-sync、version-sync。"
 version: 0.1.1
 license: MIT
 author: webkubor

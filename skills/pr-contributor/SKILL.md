@@ -1,6 +1,6 @@
 ---
 name: pr-contributor
-description: "个人项目代码交付与上游贡献：GitHub/GitLab 自有仓从 worktree、验证、提交推送到远端主干验收；外部仓走 fork/PR/MR 与评审。覆盖服务器改动、未提交/未推送检查、跨机器交付回执和安全回收。任务涉及个人仓修改、提交、合并、交付收尾或上游贡献时使用。仅依赖公开工具，不依赖任何私有系统。"
+description: "AI 改完代码怎么交给团队？怎么给开源项目提一个维护者愿意合的 PR？自有 GitHub/GitLab 仓从 worktree、验证、提交推送到远端主干验收并留交付回执；外部仓按上游规矩挖真实信号、最小改动、跑项目自己的检查、提 PR/MR 并跟进 CI 与 review。覆盖服务器改动、未提交/未推送检查、跨机器交付回执与安全回收。只依赖公开工具，不依赖私有系统。"
 version: 0.2.0
 license: MIT
 author: webkubor

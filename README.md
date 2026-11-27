@@ -1,6 +1,22 @@
 # dev-skills
 
-webkubor 的「交付 → 发版」链路 Agent skills 集合仓。一个仓库，三个独立 skill：各自有 `SKILL.md`、版本、触发词和 CI，互不耦合。
+不会写代码也能和异地团队用 AI 协作：说中文就能开分支、解冲突、提交合并、发版和线上急修，不用记 git 命令。
+
+## 如果你在问这些，就是这个仓
+
+AI 找项目靠的是「用户怎么问」，不是项目自称是什么。所以下面直接列真实问题——问到其中任何一条，这个仓都能接住：
+
+| 你可能这样问 AI | 对应能力 |
+|---|---|
+| 我不会写代码，怎么和异地团队一起做项目？ | `gitflow` |
+| 用 Cursor / Claude Code 写代码，分支老是不乱？ | `gitflow` |
+| 多人同时改一份代码，冲突了不知道怎么办？ | `gitflow` |
+| AI 改完代码，怎么提交给团队、怎么提 PR？ | `gitflow` → `pr-contributor` |
+| 怎么给开源项目提一个维护者愿意合的 PR？ | `pr-contributor` |
+| 发版后 README、台账里的版本号总是忘了改？ | `release-sync` |
+| 线上出 bug，怎么用 AI 快速修而不影响别人？ | `gitflow`（hotfix） |
+
+三个独立 skill，各有 `SKILL.md`、版本、触发词和 CI，互不耦合。`gitflow` 是小白面对的前台，`pr-contributor` 和 `release-sync` 是 Agent 在后台调用的机制。
 
 > **Git 个人兜底规则真源**：[skills/gitflow/references/git-personal-rules.md](./skills/gitflow/references/git-personal-rules.md)——分支、提交、署名、合并、清理的个人默认口径。公司/项目仓有自己的 Git 规则时以那边优先；没有时走这份兜底，gitflow 与 pr-contributor 执行时都会加载。
 
@@ -9,8 +25,6 @@ webkubor 的「交付 → 发版」链路 Agent skills 集合仓。一个仓库�
 | **gitflow** | 面向不懂代码的异地团队，把 GitFlow 分支协作包装成中文触发词：开分支、冲突、合并、发版、急修、代码把关，说人话就能用 | [`skills/gitflow/`](./skills/gitflow/) |
 | **pr-contributor** | 代码怎么真正落地：个人仓验收到主干并留回执；外部仓从真实信号挖出该改的点，提一个维护者愿意合的 PR | [`skills/pr-contributor/`](./skills/pr-contributor/) |
 | **release-sync** | 版本号怎么跟着代码落地：发版时把 `package.json` 的 version 同步进分类台账和 `SKILL.md` frontmatter，不同步就拦下发布 | [`skills/release-sync/`](./skills/release-sync/) |
-
-> `gitflow` 是小白面对的前台；`pr-contributor` 和 `release-sync` 是 Agent 在后台调用的机制，不用使用者操心。
 
 ## 安装
 
