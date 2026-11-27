@@ -36,7 +36,7 @@ trigger:
   - 当前分支
 metadata:
   openclaw:
-    tags: [gitflow, git, 小白, vibecoding, 异地协作, branch, conflict, release, hotfix]
+    tags: [gitflow, 小白, 异地协作, 分支, 冲突, 发版, 急修, vibecoding]
     requires:
       bins: [git, python3]
 ---

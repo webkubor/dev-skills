@@ -1,4 +1,4 @@
-<h1 align="center">🔀 PR Contributor</h1>
+<h1 align="center">🔀 PR Contributor · 代码交付与上游贡献</h1>
 
 个人仓代码交付与外部贡献的统一技能。自有 GitHub/GitLab 仓从隔离修改一直验收到远端主干；外部项目遵循上游规则，跟进 PR/MR。基础交付工具只需要 Git 和 Python 3.9+，不依赖任何私有系统。
 
@@ -62,7 +62,7 @@ https://raw.githubusercontent.com/webkubor/dev-skills/main/skills/pr-contributor
 
 ---
 
-## Why This
+## 为什么选它
 
 Agent 写代码很强，但**提 PR 是另一门手艺**。会写代码 ≠ 会贡献。
 

@@ -9,7 +9,7 @@ platforms: [linux, macos]
 url: https://github.com/webkubor/dev-skills
 metadata:
   openclaw:
-    tags: [release, version, sync, publish, skill-version, changelog]
+    tags: [发版, 版本号, 文档同步, 台账, 发布, publish]
     requires:
       bins: [node]
 ---

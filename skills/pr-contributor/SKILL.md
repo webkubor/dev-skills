@@ -46,7 +46,7 @@ trigger:
   - PR 评审
 metadata:
   openclaw:
-    tags: [github, pull-request, open-source, contribution, fork, upstream, ci]
+    tags: [代码交付, 开源贡献, 拉取请求, 提交, 合并, github, gitlab]
     requires:
       bins: [git, python3]
 ---

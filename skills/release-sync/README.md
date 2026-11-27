@@ -1,4 +1,4 @@
-# 🔄 Release Sync
+# 🔄 Release Sync · 发版版本号同步
 
 <p align="center">
   <a href="https://github.com/webkubor/dev-skills/releases"><img src="https://img.shields.io/github/v/release/webkubor/dev-skills?style=for-the-badge&color=3fb950&label=release" alt="release" /></a>
@@ -14,12 +14,12 @@
 </p>
 
 <p align="center">
-  <a href="#install-安装">安装</a> · <a href="#为什么需要它">为什么需要它</a> · <a href="#它做什么">它做什么</a> · <a href="#使用">使用</a> · <a href="#平台建议">生态</a>
+  <a href="#安装">安装</a> · <a href="#为什么需要它">为什么需要它</a> · <a href="#它做什么">它做什么</a> · <a href="#使用">使用</a> · <a href="#生态">生态</a>
 </p>
 
 ---
 
-## Why This
+## 为什么选它
 
 | | 手改文档 | 只校验不自动 | **release-sync** |
 |---|---|---|---|
@@ -60,7 +60,7 @@
 
 ---
 
-## Install 安装
+## 安装
 
 ### 作为 Agent 技能接入
 
@@ -143,6 +143,6 @@ node scripts/version-sync-gate.mjs ./packages/b   # 可在发布循环里依次�
 
 已在 **7 个真实仓库**接入（两个 Vite 插件 + 四个 dsh 插件 + cs-mcp），覆盖多列表格台账 / scope 包名 / 无台账三类形态。
 
-## License
+## 许可证
 
 MIT — 见 [LICENSE](./LICENSE)。欢迎 [提 Issue](https://github.com/webkubor/dev-skills/issues) 或 PR。
