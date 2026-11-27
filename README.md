@@ -4,18 +4,22 @@ webkubor 的「交付 → 发版」链路 Agent skills 集合仓。一个仓库�
 
 | Skill | 解决什么 | 目录 |
 |---|---|---|
+| **gitflow** | 面向不懂代码的异地团队，把 GitFlow 分支协作包装成中文触发词：开分支、冲突、合并、发版、急修、代码把关，说人话就能用 | [`skills/gitflow/`](./skills/gitflow/) |
 | **pr-contributor** | 代码怎么真正落地：个人仓验收到主干并留回执；外部仓从真实信号挖出该改的点，提一个维护者愿意合的 PR | [`skills/pr-contributor/`](./skills/pr-contributor/) |
 | **release-sync** | 版本号怎么跟着代码落地：发版时把 `package.json` 的 version 同步进分类台账和 `SKILL.md` frontmatter，不同步就拦下发布 | [`skills/release-sync/`](./skills/release-sync/) |
+
+> `gitflow` 是小白面对的前台；`pr-contributor` 和 `release-sync` 是 Agent 在后台调用的机制，不用使用者操心。
 
 ## 安装
 
 从仓库根用统一入口：
 
 ```bash
-bash install.sh pr-contributor          # 装进本机各 Agent 的 skills 目录
-bash install.sh release-sync
-bash install.sh pr-contributor --list   # 只看会装到哪，不改文件
-bash install.sh release-sync --uninstall
+bash install.sh gitflow                 # 小白入口：中文触发词走 GitFlow
+bash install.sh pr-contributor          # 后台：交付 / PR 核验
+bash install.sh release-sync            # 后台：发版版本号同步
+bash install.sh gitflow --list          # 只看会装到哪，不改文件
+bash install.sh gitflow --uninstall
 ```
 
 也可以进各 skill 目录用它们自己的安装脚本：
@@ -35,6 +39,7 @@ cd skills/release-sync && bash install-skill.sh
 dev-skills/
 ├── install.sh                       # 统一安装入口
 ├── skills/
+│   ├── gitflow/                     { SKILL.md, references, scripts/gitflow.py, tests }  ← 小白前台
 │   ├── pr-contributor/              { SKILL.md, references, scripts, templates, evals, tests }
 │   └── release-sync/                { SKILL.md, scripts, README(.en).md, install-version-gate.sh }
 └── .github/workflows/               # 两份 CI + 两份 publish，按 skill 分名

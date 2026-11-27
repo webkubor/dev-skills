@@ -5,6 +5,9 @@ set -euo pipefail
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 case "${1:-}" in
+  gitflow)
+    exec bash "$HERE/skills/gitflow/install.sh" "${@:2}"
+    ;;
   pr-contributor)
     exec bash "$HERE/skills/pr-contributor/install.sh" "${@:2}"
     ;;
@@ -14,8 +17,9 @@ case "${1:-}" in
   -h|--help|"")
     echo "用法: ./install.sh <skill> [安装器参数...]" >&2
     echo "" >&2
-    echo "  pr-contributor  个人仓交付 / 上游 PR 贡献" >&2
-    echo "  release-sync    发版版本号同步（skill 本体）" >&2
+    echo "  gitflow         小白前台：中文触发词走 GitFlow 分支流程" >&2
+    echo "  pr-contributor  后台：个人仓交付 / 上游 PR 贡献" >&2
+    echo "  release-sync    后台：发版版本号同步（skill 本体）" >&2
     echo "" >&2
     echo "安装器参数见各 skill 的 README，例如 --list / --copy / --uninstall / --target。" >&2
     echo "" >&2
